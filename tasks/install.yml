@@ -12,6 +12,3 @@
   with_items: mysql_pkgs
   environment: env
   when: ansible_os_family == 'Debian'
-
-- name: Start the mysql services Redhat
-  service: name={{ mysql_service }} state=started enabled=yes
